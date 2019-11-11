@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chating</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status__column">
       <span class="status-bar__clock">13:54</span>
@@ -40,10 +40,10 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, January 11, 2019</span>
-        <li class="incoming-messages">
+        <li class="incoming-message message">
           <img src="Dublin.PNG" class="g-avatar message__avatar" />
           <div class="message__content">
             <span class="message__author">Best Friend</span>
@@ -51,16 +51,26 @@
               Hi!
             </div>
           </div>
-          <span class="message__timestamp"></span>
         </li>
-        <li class="incoming-messages">
-          <span class="message__timestamp"></span>
+        <li class="sent-message message">
           <div class="message__content">
-            <div class="message__bubble">
-              Hello!
-            </div>
+            <div class="message__bubble">Hi! How are you?</div>
           </div>
         </li>
+        <li class="incoming-message message">
+            <img src="Dublin.PNG" class="g-avatar message__avatar" />
+            <div class="message__content">
+              <span class="message__author">Best Friend</span>
+              <div class="message__bubble">
+                I'm fine! and you?
+              </div>
+            </div>
+          </li>
+          <li class="sent-message message">
+            <div class="message__content">
+              <div class="message__bubble">I'm fine thank you!</div>
+            </div>
+          </li>
       </ul>
     </main>
     <div class="chat__write">

@@ -7,6 +7,10 @@
     padding: 0px 20px;
 }
 
+.chat-screen{
+    min-height: 100vh;
+}
+
 .chat__write{
     position: fixed;
     bottom: 50px;
@@ -32,7 +36,7 @@
 }
 
 .chat__write-column input{
-    padding: 20px;
+    padding: 20px 10px;
     width: 100%;
     border: none;
     font-size: 14px;
@@ -40,4 +44,77 @@
 
 .chat__write-column input:focus{
     outline: none;
+}
+
+.chat-screen .chat__messages{
+    border-top: 1px solid #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0px 20px;
+    padding-top: 30px;
+}
+
+.chat__messages .chat__timestamp{
+    background-color: skyblue;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.message{
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.message .message__content{
+    width: 80%;
+}
+
+.incoming-message img{
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.incoming-message{
+    align-self: flex-start;
+}
+
+.sent-message{
+    align-self: flex-end;
+}
+
+.message .message__bubble{
+    background-color: #9fdefc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    display: box;
+}
+
+.incoming-message .message__author{
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.incoming-message .message__bubble{
+    border-top-left-radius: 0px;
+    background-image:linear-gradient(to right, #5433FF, #20BDFF, #A5FECB)
+}
+
+.sent-message .message__bubble{
+    border-bottom-right-radius: 0px;
+    background-image:linear-gradient(to left, #5433FF, #20BDFF, #A5FECB)
 }
